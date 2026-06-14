@@ -1,0 +1,109 @@
+.success-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.check-icon {
+  font-size: 60px;
+  color: #2ecc71;
+  background: #eafaf1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.success-title { font-size: 28px; font-weight: 800; color: #333; margin-bottom: 10px; }
+.success-msg { color: #666; font-size: 16px; margin-bottom: 30px; }
+
+/* Order ID Box */
+.order-id-box {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 40px;
+  border: 1px dashed #ccc;
+}
+
+/* Timeline / Status Tracking */
+.tracking-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.tracking-steps::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #e0e0e0;
+  z-index: 0;
+}
+
+.step {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.step.active .step-circle { background: #2ecc71; }
+.step-label { font-size: 12px; font-weight: 600; color: #aaa; }
+.step.active .step-label { color: #333; }
+
+/* Button */
+.home-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.home-btn:hover { background-color: #e64a19; }

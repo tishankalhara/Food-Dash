@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.home-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafd;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 20px; 
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722;
+  cursor: pointer;
+  margin-right: auto; 
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff5722;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* 1. Address Box (Gray Pill Shape) */
+.location-pill {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6; 
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 20px; 
+}
+
+.location-pill:hover {
+  background-color: #e5e7eb;
+}
+
+.pin-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ff5722;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.location-label {
+  font-size: 11px;
+  color: #777;
+}
+
+.location-value {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 2. Middle Links (Home, Offers, Help) */
+.nav-middle-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-link-text:hover, .nav-link-text.active {
+  color: #ff5722;
+}
+
+/* 3. Right Side (Notification) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification-box {
+  position: relative;
+  cursor: pointer;
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.notification-box:hover {
+    background-color: #f0f0f0;
+}
+
+.bell-icon {
+  font-size: 24px;
+}
+
+.notif-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/*HERO SECTION*/
+.hero-section {
+  height: 420px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://img.freepik.com/free-photo/table-full-food_23-2149209253.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.search-container {
+  background: white;
+  padding: 8px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  width: 550px;
+  max-width: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.search-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn:hover { background-color: #e64a19; }
+
+/*CATEGORIES SECTION*/
+.category-section {
+  padding: 40px 50px 20px;
+}
+
+.category-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.category-row::-webkit-scrollbar { display: none; }
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 80px;
+  transition: transform 0.2s;
+}
+
+.category-card:hover { transform: translateY(-5px); }
+
+.cat-img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.cat-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+/*PROMO BANNER*/
+.promo-banner {
+  background: linear-gradient(45deg, #ff9a44, #fc6076);
+  margin: 20px 50px;
+  padding: 25px 40px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(252, 96, 118, 0.3);
+}
+
+.banner-text h2 { margin: 0; font-size: 28px; }
+.banner-text p { margin: 5px 0 0; opacity: 0.9; }
+.banner-btn {
+  background: white;
+  color: #fc6076;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/*SECTIONS*/
+.section-container { padding: 30px 50px; }
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/*RESTAURANT CARDS*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card-img-container { position: relative; }
+.card-img { width: 100%; height: 190px; object-fit: cover; }
+
+.badge-free {
+  position: absolute;
+  top: 15px; right: 15px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card-info { padding: 20px; }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-name { font-size: 19px; font-weight: 700; margin: 0; color: #2c3e50; }
+.card-rating { 
+    background-color: #fff3e0; 
+    color: #e67e22; 
+    padding: 3px 8px; 
+    border-radius: 8px; 
+    font-size: 13px; 
+    font-weight: 600; 
+    display: flex; align-items: center; gap: 4px;
+}
+
+.card-meta {
+  font-size: 13px;
+  color: #7f8c8d;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+.meta-item { display: flex; align-items: center; gap: 5px; }
+
+/* FOOTER*/
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+    margin-top: 20px;
+}
+/* Fade In Animation */
+.fade-in-text {
+    animation: fadeIn 1s ease-in-out;
+    font-size: 55px;
+    font-weight: 800;
+    color: hwb(192 92% 6%);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    min-height: 130px; 
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

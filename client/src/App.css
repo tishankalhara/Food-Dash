@@ -1,0 +1,87 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/top-view-fast-food-mix-mozzarella-sticks-club-sandwich-hamburger-mushroom-pizza-caesar-shrimp-salad-french-fries-ketchup-mayo-cheese-sauces-rustic-wooden-table_141793-3998.jpg?w=1380&t=st=1704888000~exp=1704888600~hmac=e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px); 
+}
+
+.register-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+}
+
+.logo-icon {
+  font-size: 40px;
+  color: #d35400;
+}
+
+.food-dash-title {
+  color: #d35400;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.join-title {
+  margin: 10px 0 5px;
+  font-size: 24px;
+}
+
+.sub-title {
+  color: gray;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box; 
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #d35400; 
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #e67e22;
+}
+
+/* Login Link */
+.login-link-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
